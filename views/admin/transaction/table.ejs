@@ -17,16 +17,16 @@
             <td>
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <img width="48px" height="48px" src="http://localhost:3000/uploads/<%= transaction[i].historyVoucherTopUp.thumbnail %>" alt="thumbnail">
+                        <img width="48px" height="48px" src="https://storegg-app.herokuapp.com/uploads/<%= transaction[i].historyVoucherTopUp.thumbnail %>" alt="thumbnail">
                     </li>
                 </ul>
-                <%- transaction[i]?.historyVoucherTopUp?.gameName %>
+                <%= transaction[i]?.historyVoucherTopUp?.gameName %>
                 <br>
-                <%- transaction[i]?.historyVoucherTopUp?.category %>
+                <%= transaction[i]?.historyVoucherTopUp?.category %>
             </td>
             <td>
-                <%- transaction[i]?.historyVoucherTopUp?.coinQuantity %>
-                <%- transaction[i]?.historyVoucherTopUp?.coinName %>
+                <%= transaction[i]?.historyVoucherTopUp?.coinQuantity %>
+                <%= transaction[i]?.historyVoucherTopUp?.coinName %>
             </td>
             <td><%= transaction[i].value %> </td>
             <td>
