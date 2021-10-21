@@ -1,0 +1,5 @@
+NODE=dev
+SERVICE_NAME=bwa-storegg
+MONGO_URL=mongodb+srv://antasofa:aFgA9tiNxOl71uWC@cluster0.tt0ro.mongodb.net/db_bwa_store_gg?retryWrites=true&w=majority
+MONGO_URL_DEV=mongodb://127.0.0.1:27017/db_bwa_store_gg
+SECRET=RAHASIA
