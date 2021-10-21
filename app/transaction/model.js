@@ -21,7 +21,7 @@ let transactionSchema = mongoose.Schema({
         maxLength: [225, 'Nama tidak boleh lebih dari 225 karakter!'],
         minLength: [3, 'Nama harus lebih dari 3 karakter!']
     },
-    userAccount: {
+    accountUser: {
         type: String,
         require: [true, 'Nama tidak boleh kosong!'],
         maxLength: [225, 'Nama user tidak boleh lebih dari 225 karakter!'],

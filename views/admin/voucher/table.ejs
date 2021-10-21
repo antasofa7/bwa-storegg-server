@@ -33,23 +33,23 @@
                     </span>
                 <% } %>
             </td>
-            <td>
+            <td style="width: 120px;">
                 <form action="/voucher/status/<%= voucher[i]._id %>?_method=PUT" method="POST" style="display: inline-block;">
                         <% if(voucher[i].status === 'Y') { %>
-                            <button class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Matikan status">
+                            <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Matikan status">
                                 <i class="fas fa-ban" style="color: white;"></i>
                             </button>
                         <% } else { %>
-                            <button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Hidupkan status">
+                            <button class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="Hidupkan status">
                                 <i class="fas fa-check-circle"></i>
                             </button>
                         <% } %>
                 </form>
-                <a href="/voucher/edit/<%= voucher[i]._id %>" class="btn btn-primary">
+                <a href="/voucher/edit/<%= voucher[i]._id %>" class="btn btn-primary btn-sm">
                     <i class="fas fa-pencil-alt"></i>
                 </a>
                 <form style="display: inline-block;" action="/voucher/delete/<%= voucher[i]._id %>?_method=DELETE" method="POST">
-                    <button class="btn btn-danger ">
+                    <button class="btn btn-danger btn-sm">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </form>

@@ -16,7 +16,7 @@
             <td>
                 <% payment[i].banks.forEach(bank => { %>
                     <span class="badge badge-info">
-                        <%= bank.name %> (<%= bank.nameBank %> - <%= bank.noRekening %>)
+                        <%= bank.name %> (<%= bank.bankName %> - <%= bank.noRekening %>)
                     </span>
                 <% }) %>
             </td>
@@ -34,20 +34,20 @@
             <td>
                 <form action="/payment/status/<%= payment[i]._id %>?_method=PUT" method="POST" style="display: inline-block;">
                         <% if(payment[i].status === 'Y') { %>
-                            <button class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Matikan status">
+                            <button class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Matikan status">
                                 <i class="fas fa-ban" style="color: white;"></i>
                             </button>
                         <% } else { %>
-                            <button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Hidupkan status">
+                            <button class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="Hidupkan status">
                                 <i class="fas fa-check-circle"></i>
                             </button>
                         <% } %>
                 </form>
-                <a href="/payment/edit/<%= payment[i]._id %>" class="btn btn-primary">
+                <a href="/payment/edit/<%= payment[i]._id %>" class="btn btn-primary btn-sm">
                     <i class="fas fa-pencil-alt"></i>
                 </a>
                 <form action="/payment/delete/<%= payment[i]._id %>?_method=DELETE" method="POST" style="display: inline-block;">
-                    <button class="btn btn-danger ">
+                    <button class="btn btn-danger btn-sm">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </form>
