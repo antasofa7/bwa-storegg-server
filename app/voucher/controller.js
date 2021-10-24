@@ -35,7 +35,8 @@ module.exports = {
             const nominal = await Nominal.find()
             res.render('admin/voucher/create', {
                 category,
-                nominal
+                nominal,
+                title: 'Voucher'
             })
         } catch (err) {
             req.flash('alertMessage', `${err.message}`)

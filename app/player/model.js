@@ -16,14 +16,14 @@ let playerSchema = mongoose.Schema({
     userName: {
         type: String,
         require: [true, 'Username tidak boleh kosong!'],
-        maxLength: [225, 'Password tidak boleh lebih dari 225 karakter!'],
-        minLength: [6, 'Password harus lebih dari 6 karakter!']
+        maxLength: [225, 'Username tidak boleh lebih dari 225 karakter!'],
+        minLength: [6, 'Username harus lebih dari 6 karakter!']
     },
     password: {
         type: String,
         require: [true, 'Password tidak boleh kosong'],
-        maxLength: [225, 'Username tidak boleh lebih dari 225 karakter!'],
-        minLength: [6, 'Username harus lebih dari 6 karakter!']
+        maxLength: [225, 'Password tidak boleh lebih dari 225 karakter!'],
+        minLength: [6, 'Password harus lebih dari 6 karakter!']
     },
     role: {
         type: String,
